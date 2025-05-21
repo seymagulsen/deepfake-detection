@@ -1,5 +1,0 @@
-fastai
-torch
-gradio
-transformers
-datasets
