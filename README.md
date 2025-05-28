@@ -1,6 +1,5 @@
 # Deepfake Detection with Transfer Learning and FastAI
-
-🚀 A robust image classification project to detect manipulated media using deep learning, developed as a midterm project for the **ADS 564 - Deep Learning** course.
+A robust image classification project to detect manipulated media using deep learning, developed as a midterm project for the **ADS 564 - Deep Learning** course.
 
 **Prepared by:** Şeyma Gülşen Akkuş  
 **Live Demo:** [Gradio App on Hugging Face Spaces](https://huggingface.co/spaces/seyma9gulsen/deepfake_detection)  
@@ -8,7 +7,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Deepfakes — synthetic media created using artificial intelligence — are increasingly used in both creative and malicious contexts. This project presents a deep learning-based classifier to detect fake face images using:
 
@@ -20,7 +19,7 @@ The model is trained on a curated subset of the [FaceForensics++](https://github
 
 ---
 
-## 🧠 Model Highlights
+## Model Highlights
 
 - **Architecture**: Xception (`legacy_xception` from `timm`)
 - **Training Strategy**:
@@ -31,25 +30,24 @@ The model is trained on a curated subset of the [FaceForensics++](https://github
   - Test-Time Augmentation (TTA)
 
 - **Performance (with TTA)**:
-  - 🎯 Accuracy: **97.06%**
-  - 🧠 Precision: **96.96%**
-  - 🔁 Recall: **97.27%**
-  - 📊 F1 Score: **97.05%**
+  - Accuracy: **97.06%**
+  - Precision: **96.96%**
+  - Recall: **97.27%**
+  - F1 Score: **97.05%**
 
 ---
 
-## 🖼️ Gradio App
+## Gradio App
 
 Upload a face image and receive:
-- 🔍 A prediction (real or fake)
-- 📊 Confidence score
-- 📜 Inference history
+- A prediction (real or fake)
+- Confidence score
 
 👉 Try it now: [Live on Hugging Face](https://huggingface.co/spaces/seyma9gulsen/deepfake_detection)
 
 ---
 
-## 📊 Training Pipeline Summary
+## Training Pipeline Summary
 
 - **Data Preparation**: Extracted up to 100 frames from selected videos for each class (`original` and `fake_sequences`).
 - **DataBlock Setup**: Used FastAI’s modular pipeline to define image loading, augmentation, and labeling.
@@ -58,7 +56,7 @@ Upload a face image and receive:
 
 ---
 
-## 🧪 Techniques Used
+## Techniques Used
 
 | **Category**         | **Techniques**                                           |
 |----------------------|----------------------------------------------------------|
@@ -71,15 +69,15 @@ Upload a face image and receive:
 
 ---
 
-## 🔭 Future Work
+## Future Work
 
-- 🧩 **Video-Level Detection**: Aggregate predictions across frames using temporal models.
-- 🪞 **Multi-Class Classification**: Identify specific types of manipulations (e.g., FaceSwap, DeepFakes).
-- 🧠 **Temporal Modeling**: Explore RNNs, 3D CNNs, or Transformer-based models to capture frame-to-frame inconsistencies.
+- **Video-Level Detection**: Aggregate predictions across frames using temporal models.
+- **Multi-Class Classification**: Identify specific types of manipulations (e.g., FaceSwap, DeepFakes).
+- **Temporal Modeling**: Explore RNNs, 3D CNNs, or Transformer-based models to capture frame-to-frame inconsistencies.
 
 ---
 
-## 📚 References
+## References
 
 - [FaceForensics++ Dataset](https://github.com/ondyari/FaceForensics)
 - [FastAI Library](https://github.com/fastai/fastai)
@@ -88,14 +86,14 @@ Upload a face image and receive:
 
 ---
 
-## ✨ Acknowledgments
+## Acknowledgments
 
 This project was completed as part of the **ADS 564 - Deep Learning** course at TED University.  
 Special thanks to the instructors and peers for their guidance and feedback throughout the project.
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Şeyma Gülşen Akkuş**  
 📧 seyma.gulsen@tedu.edu.tr  
